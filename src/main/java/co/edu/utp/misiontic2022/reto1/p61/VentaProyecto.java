@@ -2,6 +2,8 @@ package co.edu.utp.misiontic2022.reto1.p61;
 
 public class VentaProyecto {
 
+    double Monto;
+
     // -----------------------------------------------------------------
 // Atributos
 // -----------------------------------------------------------------
