@@ -35,13 +35,20 @@ public double calcularInteresCompuesto(int pTiempo, double pMonto, double pInter
 
     }
 
-/*public String compararInversion (int pTiempo, double pMonto, double pInteres){
-    // ...
-    }
-public String compararInversion ( ){
-    // ...
+public String compararInversion (int pTiempo, double pMonto, double pInteres){
+    
+    diferencia= (Math.round (InteresCompuesto= pMonto * (Math.pow (  (1+(pInteres/100)  ) , pTiempo  )  -1)) - 
+    (Math.round(InteresSimple=pMonto*(pInteres/100)*pTiempo)));
+
+    return  "La diferencia entre la proyección de interés compuesto e interés simple es: $" + diferencia ;
+
     }
 
-    */
+
+//public String compararInversion ( ){
+    // ...
+ //   }
+
+    
     
 }
