@@ -2,23 +2,24 @@ package co.edu.utp.misiontic2022.reto1.p61;
 
 public class VentaProyecto {
 
-    public int Tiempo=0;
-    public double Monto=0;
-    public double Interes=0;
-    public double InteresSimple=0;
-    public double InteresCompuesto=0;
-    public double diferencia=0;
+    public int Tiempo;
+    public double Monto;
+    public double Interes;
+    public double InteresSimple;
+    public double InteresCompuesto;
+    public double diferencia;
 
 
 
 
-
-// Constructores
-// -----------------------------------------------------------------
-// ...
-// -----------------------------------------------------------------
-// Métodos
-// -----------------------------------------------------------------
+public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
+    try {
+        InteresSimple=Math.round(pMonto*(pInteres/100)*pTiempo); 
+        }
+    catch () {InteresSimple=0;}
+    finally {return InteresSimple;}
+    }
+/*
 public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
 
     return Math.round(InteresSimple=pMonto*(pInteres/100)*pTiempo);
@@ -30,7 +31,7 @@ public double calcularInteresSimple(){
 
     return InteresSimple=0;
     }
-
+*/
 
 
 
