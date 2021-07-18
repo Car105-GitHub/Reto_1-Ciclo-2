@@ -21,17 +21,23 @@ public class VentaProyecto {
 // -----------------------------------------------------------------
 public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
 
-    return Math.round(InteresSimple=pMonto*(pInteres/100)*pTiempo);
+    if (pTiempo != 0) {
+
+        InteresSimple = Math.round(Monto*(pInteres/100)*pTiempo);
+    }
+
+    return InteresSimple;
 
     }
 
 public double calcularInteresCompuesto(int pTiempo, double pMonto, double pInteres ){
 
- //   System.out.println( Math.pow(5,3));
+    if (pTiempo != 0) {
 
-    //return Math.round(InteresCompuesto=pMonto*Math.pow((1+(pInteres/100)),pTiempo)  -1);
+        InteresCompuesto= Math.round (pMonto * (Math.pow (  (1+(pInteres/100)  ) , pTiempo  )  -1));
+    }
 
-    return Math.round (InteresCompuesto= pMonto * (Math.pow (  (1+(pInteres/100)  ) , pTiempo  )  -1));
+    return InteresCompuesto ;
 
     }
 
