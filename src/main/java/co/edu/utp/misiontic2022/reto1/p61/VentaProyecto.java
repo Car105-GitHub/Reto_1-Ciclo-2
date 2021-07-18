@@ -21,25 +21,33 @@ public class VentaProyecto {
 // -----------------------------------------------------------------
 public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
 
-    if (pTiempo != 0) {
-
-        InteresSimple = Math.round(Monto*(pInteres/100)*pTiempo);
+    return Math.round(InteresSimple=pMonto*(pInteres/100)*pTiempo);
     }
 
-    return InteresSimple;
 
+
+public double calcularInteresSimple(){
+
+    return InteresSimple=0;
     }
+
+
+
 
 public double calcularInteresCompuesto(int pTiempo, double pMonto, double pInteres ){
 
-    if (pTiempo != 0) {
-
-        InteresCompuesto= Math.round (pMonto * (Math.pow (  (1+(pInteres/100)  ) , pTiempo  )  -1));
+    return InteresCompuesto= pMonto * (Math.pow (  (1+(pInteres/100)  ) , pTiempo  )  -1);
     }
 
-    return InteresCompuesto ;
 
+
+public double calcularInteresCompuesto(){
+
+    return InteresCompuesto=0;
     }
+
+
+
 
 public String compararInversion (int pTiempo, double pMonto, double pInteres){
     
@@ -51,9 +59,10 @@ public String compararInversion (int pTiempo, double pMonto, double pInteres){
     }
 
 
-//public String compararInversion ( ){
-    // ...
- //   }
+public String compararInversion ( ){
+
+    return "No se obtuvo diferencia entre las proyecciones, revisar los parámetros de entrada.";
+  }
 
     
     
