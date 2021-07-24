@@ -12,12 +12,10 @@ public class VentaProyecto {
 
 
 public VentaProyecto() {
-        Tiempo = tiempo;
-        Monto = monto;
-        Interes = interes;
-        InteresSimple = interesSimple;
-        InteresCompuesto = interesCompuesto;
-        this.diferencia = diferencia;
+        Tiempo = 0;
+        Monto = 0;
+        Interes = 0;
+
     }
 
 
@@ -36,16 +34,6 @@ public VentaProyecto(int tiempo, double monto, double interes, double interesSim
 
 
 
-
-    
-public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
-    try {
-        InteresSimple=Math.round(pMonto*(pInteres/100)*pTiempo); 
-        }
-    catch () {InteresSimple=0;}
-    finally {return InteresSimple;}
-    }
-/*
 public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
 
     return Math.round(InteresSimple=pMonto*(pInteres/100)*pTiempo);
@@ -57,7 +45,7 @@ public double calcularInteresSimple(){
 
     return InteresSimple=0;
     }
-*/
+
 
 
 
