@@ -8,6 +8,16 @@ public class VentaProyecto {
     public double InteresSimple;
     public double InteresCompuesto;
     public double diferencia;
+    
+
+
+
+
+
+
+
+
+
 
 
 
