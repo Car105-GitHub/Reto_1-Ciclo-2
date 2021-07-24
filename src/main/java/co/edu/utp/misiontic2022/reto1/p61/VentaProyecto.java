@@ -11,17 +11,33 @@ public class VentaProyecto {
     
 
 
+public VentaProyecto() {
+        Tiempo = tiempo;
+        Monto = monto;
+        Interes = interes;
+        InteresSimple = interesSimple;
+        InteresCompuesto = interesCompuesto;
+        this.diferencia = diferencia;
+    }
 
 
 
 
 
+public VentaProyecto(int tiempo, double monto, double interes, double interesSimple, double interesCompuesto,
+            double diferencia) {
+        Tiempo = tiempo;
+        Monto = monto;
+        Interes = interes;
+        InteresSimple = interesSimple;
+        InteresCompuesto = interesCompuesto;
+        this.diferencia = diferencia;
+    }
 
 
 
 
-
-
+    
 public double calcularInteresSimple(int pTiempo, double pMonto, double pInteres){
     try {
         InteresSimple=Math.round(pMonto*(pInteres/100)*pTiempo); 
